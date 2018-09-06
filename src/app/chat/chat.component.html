@@ -1,0 +1,6 @@
+<div class="full-container">
+  <div class="msg-container" #msgContainer>
+    <app-message *ngFor="let msg of messages | async;" [message]="msg" [userAuth]="userAuth"></app-message>
+  </div>
+  <app-input [userAuth]="userAuth"></app-input>
+</div>
